@@ -35,4 +35,26 @@ class MerchandiseController extends Controller
         $merchandises->delete();
         return redirect()->back();
     }
+
+    public function showModal($id)
+    {
+        $merchandises = Merchandise::find($id);
+        return response()->json(['data' => $merchandises]);
+    }
+
+    public function updateModal(Request $request, $id)
+    {
+        $form_detail = Merchandise::find($id);
+        $form_detail->nama = $request->nama;
+        $form_detail->harga = $request->harga;
+        $form_detail->stock = $request->stock;
+        if (is_null($request->isActive)) {
+            $form_detail->status = 0;
+        } else {
+            $form_detail->status = 1;
+        }
+        $form_detail->save();
+
+        return redirect()->back();
+    }
 }

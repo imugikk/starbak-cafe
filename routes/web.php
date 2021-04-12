@@ -20,6 +20,8 @@ Route::get('/drink/delete/{id}', 'DrinkController@delete');
 Route::get('/merchandise', 'MerchandiseController@index');
 Route::post('/merchandise/store', 'MerchandiseController@store');
 Route::get('/merchandise/delete/{id}', 'MerchandiseController@delete');
+Route::post('/merchandise/update/{id}', 'MerchandiseController@updateModal');
+Route::get('/merchandise/show/{id}', 'MerchandiseController@showModal');
 
 Route::get('/staff', 'StaffController@index');
 Route::post('/staff/store', 'StaffController@store');
