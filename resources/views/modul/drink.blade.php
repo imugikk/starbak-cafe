@@ -101,7 +101,7 @@
                         @endif
                     </td>
                     <td>
-                        {{-- <button onclick="edit('{{$item->id}}')" class="btn btn-success float-right mr-2"><i class="fa fa-pencil-alt"></i></button> --}}
+                        <button onclick="edit('{{$thing->id}}')" class="btn btn-success float-right mr-2"><i class="fa fa-pencil-alt"></i></button>
                         <a href="/drink/delete/{{ $thing->id }}" class="btn btn-danger float-right mr-2">
                             <i class="fa fa-trash"></i>
                         </a>
@@ -112,12 +112,12 @@
     </table>
 </div>
 
-{{-- <!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="update-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Edit Banner</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Edit Drink</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -125,20 +125,20 @@
                 @csrf
                 <div class="form-group row">
                     <div class="col-12">
-                        <label for="title" class="form-label">Title</label>
-                        <input type="text" id="title" name="title" class="form-control">
+                        <label for="title" class="form-label">Nama</label>
+                        <input type="text" id="nama" name="nama" class="form-control">
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-12">
-                        <label for="desc" class="form-label">Subtitle</label>
-                        <textarea type="text" id="desc" name="desc" class="form-control"></textarea>
+                        <label for="desc" class="form-label">Harga</label>
+                        <textarea type="text" id="harga" name="harga" class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-12">
-                        <label for="image" class="form-label">Image</label>
-                        <input type="text" id="image" name="image" class="form-control">
+                        <label for="image" class="form-label">Stock</label>
+                        <input type="number" id="stock" name="stock" class="form-control">
                     </div>
                 </div>
                 <div class="form-check">
@@ -154,22 +154,22 @@
         </form>
         </div>
     </div>
-  </div> --}}
+  </div>
 
-{{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     function edit(id){
-        var url = '/admin/banner/show/'+id;
-        var link = '/admin/banner/update/'+id;
+        var url = '/drink/show/'+id;
+        var link = '/drink/update/'+id;
         $.ajax({
             url : url,
             method: 'get',
             success: function(response) {
                 $('#form-update').prop('action', link);
-                $('#title').val(response.data['title']);
-                $('#desc').val(response.data['desc']);
-                $('#image').val(response.data['image']);
-                if(response.data['st']==1){
+                $('#nama').val(response.data['nama']);
+                $('#harga').val(response.data['harga']);
+                $('#stock').val(response.data['stock']);
+                if(response.data['status']==1){
                     $("#isActive").prop("checked", true);
                 } else {
                     $("#isActive").prop("checked", false);
@@ -178,6 +178,6 @@
             }
         });
     }
-</script> --}}
+</script>
 
 @endsection

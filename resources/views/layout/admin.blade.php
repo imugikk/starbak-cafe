@@ -54,7 +54,7 @@
                             @else
                                 <a href="{{url('/drink')}}" class="nav-link">
                                     @endif
-                                    <i class="nav-icon fas fa-edit"></i>
+                                    <i class="nav-icon fas fa-coffee"></i>
                                     <p>
                                         Drinks
                                     </p>
