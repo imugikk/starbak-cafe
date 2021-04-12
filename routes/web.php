@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get('/food', 'FoodController@index');
+Route::post('/food/store', 'FoodController@store');
+Route::get('/food/delete/{id}', 'FoodController@delete');
+Route::post('/food/update/{id}', 'FoodController@updateModal');
+Route::get('/food/show/{id}', 'FoodController@showModal');
+
 Route::get('/drink', 'DrinkController@index');
 Route::post('/drink/store', 'DrinkController@store');
 Route::get('/drink/delete/{id}', 'DrinkController@delete');
@@ -30,3 +37,4 @@ Route::post('/staff/store', 'StaffController@store');
 Route::get('staff/delete/{id}', 'StaffController@delete');
 Route::post('/staff/update/{id}', 'StaffController@updateModal');
 Route::get('/staff/show/{id}', 'StaffController@showModal');
+
