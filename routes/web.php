@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('drink', 'DrinkController@index');
+Route::post('/drink/store', 'DrinkController@store');
+Route::get('/drink/delete/{id}', 'DrinkController@delete');
