@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/staff', 'StaffController@index');
+Route::post('/staff/store', 'StaffController@store');
+Route::get('staff/delete/{id}', 'StaffController@delete');
