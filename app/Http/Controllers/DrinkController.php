@@ -34,4 +34,26 @@ class DrinkController extends Controller
         $drinks->delete();
         return redirect()->back();
     }
+
+    public function showModal($id)
+    {
+        $drinks = Drink::find($id);
+        return response()->json(['data' => $drinks]);
+    }
+
+    public function updateModal(Request $request, $id)
+    {
+        $form_detail = Drink::find($id);
+        $form_detail->nama = $request->nama;
+        $form_detail->harga = $request->harga;
+        $form_detail->stock = $request->stock;
+        if (is_null($request->isActive)) {
+            $form_detail->status = 0;
+        } else {
+            $form_detail->status = 1;
+        }
+        $form_detail->save();
+
+        return redirect()->back();
+    }
 }
