@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/merchandise', 'MerchandiseController@index');
+Route::post('/merchandise/store', 'MerchandiseController@store');
+Route::get('/merchandise/delete/{id}', 'MerchandiseController@delete');
+
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
+
