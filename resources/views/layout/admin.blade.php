@@ -58,6 +58,18 @@
                                     <p>
                                         Merchandise
                                     </p>
+                                 </a>
+                 </li>
+                 <li class="nav-item">
+                    @if(Request::is('/staff'))
+                        <a href="{{url('/staff')}}" class="nav-link active">
+                            @else
+                                <a href="{{url('/staff')}}" class="nav-link">
+                                    @endif
+                                    <i class="nav-icon fas fa-edit"></i>
+                                    <p>
+                                        Staffs
+                                    </p>
                                 </a>
                 </li>
         <!-- /.sidebar-menu -->
