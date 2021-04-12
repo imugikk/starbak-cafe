@@ -49,6 +49,18 @@
                      with font-awesome or any other icon font library -->
                 <li class="nav-header">Main Menu</li>
                 <li class="nav-item">
+                    @if(Request::is('/drink'))
+                        <a href="{{url('/drink')}}" class="nav-link active">
+                            @else
+                                <a href="{{url('/drink')}}" class="nav-link">
+                                    @endif
+                                    <i class="nav-icon fas fa-edit"></i>
+                                    <p>
+                                        Drinks
+                                    </p>
+                                 </a>
+                 </li>
+                 <li class="nav-item">
                     @if(Request::is('/merchandise'))
                         <a href="{{url('/merchandise')}}" class="nav-link active">
                             @else
