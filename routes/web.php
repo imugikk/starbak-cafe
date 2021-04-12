@@ -17,7 +17,6 @@ Route::get('/merchandise', 'MerchandiseController@index');
 Route::post('/merchandise/store', 'MerchandiseController@store');
 Route::get('/merchandise/delete/{id}', 'MerchandiseController@delete');
 
-/*Route::get('/', function () {
-    return view('welcome');
-});*/
-
+Route::get('/staff', 'StaffController@index');
+Route::post('/staff/store', 'StaffController@store');
+Route::get('staff/delete/{id}', 'StaffController@delete');
