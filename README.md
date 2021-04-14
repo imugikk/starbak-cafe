@@ -1,3 +1,8 @@
+## Output 
+![Landing](https://github.com/imugikk/starbak-cafe/blob/f0985608daed90604dc76df71134b0fe40857ace/public/screenshot/s1.JPG)
+![Dashboard](https://github.com/imugikk/starbak-cafe/blob/f0985608daed90604dc76df71134b0fe40857ace/public/screenshot/s3.JPG)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
