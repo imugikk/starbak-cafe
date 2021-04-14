@@ -1,5 +1,8 @@
 ## Output 
+#### Our Landing
 ![Landing](https://github.com/imugikk/starbak-cafe/blob/f0985608daed90604dc76df71134b0fe40857ace/public/screenshot/s1.JPG)
+
+#### Our Dashboard Admin
 ![Dashboard](https://github.com/imugikk/starbak-cafe/blob/f0985608daed90604dc76df71134b0fe40857ace/public/screenshot/s3.JPG)
 
 
