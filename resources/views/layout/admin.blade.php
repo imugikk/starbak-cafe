@@ -47,18 +47,30 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
-                <li class="nav-header">Main Menu</li>
+                <li class="nav-header mt-3"><h5>Main Menu</h5></li>
+                <li class="nav-item">
+                    @if(Request::is('/'))
+                        <a href="{{url('/')}}" class="nav-link active">
+                            @else
+                                <a href="{{url('/')}}" class="nav-link">
+                                    @endif
+                                    <i class="nav-icon fas fa-home"></i>
+                                    <p>
+                                        Home
+                                    </p>
+                                </a>
+                </li>
                 <li class="nav-item">
                     @if(Request::is('/food'))
                         <a href="{{url('/food')}}" class="nav-link active">
                             @else
                                 <a href="{{url('/food')}}" class="nav-link">
                                     @endif
-                                    <i class="nav-icon fas fa-edit"></i>
+                                    <i class="nav-icon fas fa-hamburger"></i>
                                     <p>
                                         Foods
                                     </p>
-                                 </a>
+                                </a>
                 </li>
                 <li class="nav-item">
                     @if(Request::is('/drink'))
@@ -90,7 +102,7 @@
                             @else
                                 <a href="{{url('/staff')}}" class="nav-link">
                                     @endif
-                                    <i class="nav-icon fas fa-edit"></i>
+                                    <i class="nav-icon fas fa-user"></i>
                                     <p>
                                         Staffs
                                     </p>

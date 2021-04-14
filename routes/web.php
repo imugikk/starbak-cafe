@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/', 'LandingController@index');
+Route::get('/dashboard', 'LandingController@admin');
 
 Route::get('/food', 'FoodController@index');
 Route::post('/food/store', 'FoodController@store');
