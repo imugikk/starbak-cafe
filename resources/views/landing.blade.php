@@ -75,7 +75,7 @@
                         Menu
                     </div>
                 </a>
-                <a href="#testimonial">
+                <a href="#staff">
                     <div class="menu-item">
                         Staffs
                     </div>
