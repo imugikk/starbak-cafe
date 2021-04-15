@@ -64,7 +64,7 @@ class FoodTableSeeder extends Seeder
             'stock' => '5',
             'harga' => '170.87',
             'status' => '1',
-            'foto' => '/assets2/img/foods/f5.jpg',
+            'foto' => '/assets2/img/foods/f5.jpeg',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
