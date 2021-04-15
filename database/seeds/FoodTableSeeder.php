@@ -57,5 +57,16 @@ class FoodTableSeeder extends Seeder
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
+
+        DB::table('foods')->insert([
+            'id' => '5',
+            'nama' => 'Churros',
+            'stock' => '5',
+            'harga' => '170.87',
+            'status' => '1',
+            'foto' => '/assets2/img/foods/f5.jpg',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
+        ]);
     }
 }
