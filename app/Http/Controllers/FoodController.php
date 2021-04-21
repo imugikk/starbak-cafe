@@ -57,4 +57,12 @@ class FoodController extends Controller
 
         return redirect()->back();
     }
+
+    public function purchaseItem($id)
+    {
+        $foods = Food::find($id);
+        $foods->stock = $foods->stock - 1;
+        $foods->save();
+        return redirect()->back();
+    }
 }

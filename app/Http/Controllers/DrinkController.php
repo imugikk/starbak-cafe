@@ -56,4 +56,12 @@ class DrinkController extends Controller
 
         return redirect()->back();
     }
+
+    public function purchaseItem($id)
+    {
+        $drinks = Drink::find($id);
+        $drinks->stock = $drinks->stock - 1;
+        $drinks->save();
+        return redirect()->back();
+    }
 }

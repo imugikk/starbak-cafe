@@ -57,4 +57,12 @@ class MerchandiseController extends Controller
 
         return redirect()->back();
     }
+
+    public function purchaseItem($id)
+    {
+        $merchandises = Merchandise::find($id);
+        $merchandises->stock = $merchandises->stock - 1;
+        $merchandises->save();
+        return redirect()->back();
+    }
 }

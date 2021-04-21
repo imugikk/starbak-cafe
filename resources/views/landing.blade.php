@@ -198,12 +198,17 @@
                                         {{$item->nama}}
                                     </h3>
                                     <span>
-                                        ${{$item->harga}}
+                                        ${{$item->harga}} </br>
+                                        Stock: {{$item->stock}}
                                     </span>
                                 </div>
-                                <div class="cart-btn">
-                                    <i class="bx bx-cart-alt"></i>
-                                </div>
+                                @if ($item->stock > 0)
+                                    <div class="cart-btn">
+                                        <a href="/food/purchase/{{ $item->id }}">
+                                            <i class="bx bx-cart-alt"></i>
+                                        </a>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -220,12 +225,17 @@
                                         {{$item->nama}}
                                     </h3>
                                     <span>
-                                        ${{$item->harga}}
+                                        ${{$item->harga}} </br>
+                                        Stock: {{$item->stock}}
                                     </span>
                                 </div>
-                                <div class="cart-btn">
-                                    <i class="bx bx-cart-alt"></i>
-                                </div>
+                                @if ($item->stock > 0)
+                                    <div class="cart-btn">
+                                        <a href="/drink/purchase/{{ $item->id }}">
+                                            <i class="bx bx-cart-alt"></i>
+                                        </a>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -242,12 +252,17 @@
                                         {{$item->nama}}
                                     </h3>
                                     <span>
-                                        ${{$item->harga}}
+                                        ${{$item->harga}} </br>
+                                        Stock: {{$item->stock}}
                                     </span>
                                 </div>
-                                <div class="cart-btn">
-                                    <i class="bx bx-cart-alt"></i>
-                                </div>
+                                @if ($item->stock > 0)
+                                    <div class="cart-btn">
+                                        <a href="/merchandise/purchase/{{ $item->id }}">
+                                            <i class="bx bx-cart-alt"></i>
+                                        </a>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
