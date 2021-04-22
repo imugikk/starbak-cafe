@@ -26,29 +26,29 @@
         <div class="mb-move-item"></div>
         <div class="mb-nav-item active">
             <a href="#home">
-                <i class="bx bxs-home"></i>
+                <em class="bx bxs-home"></em>
             </a>
         </div>
         <div class="mb-nav-item">
             <a href="#about">
-                <i class='bx bxs-wink-smile'></i>
+                <em class='bx bxs-wink-smile'></em>
             </a>
         </div>
         <div class="mb-nav-item">
             <a href="#food-menu-section">
-                <i class='bx bxs-food-menu'></i>
+                <em class='bx bxs-food-menu'></em>
             </a>
         </div>
         <div class="mb-nav-item">
             <a href="#testimonial">
-                <i class='bx bxs-comment-detail'></i>
+                <em class='bx bxs-comment-detail'></em>
             </a>
         </div>
     </div>
     <!-- END MOBILE NAV -->
     <!-- BACK TO TOP BTN -->
     <a href="#home" class="back-to-top">
-        <i class="bx bxs-to-top"></i>
+        <em class="bx bxs-to-top"></em>
     </a>
     <!-- END BACK TO TOP BTN -->
     <!-- TOP NAVIGATION -->
@@ -84,7 +84,7 @@
             <a href="/dashboard">
                 <div class="right-menu ml-1">
                     <div class="cart-btn">
-                        <i class='nav-icon fas fa-desktop'></i>
+                        <em class='nav-icon fas fa-desktop'></em>
                     </div>
                 </div>
             </a>
@@ -205,7 +205,7 @@
                                 @if ($item->stock > 0)
                                     <div class="cart-btn">
                                         <a href="/food/purchase/{{ $item->id }}">
-                                            <i class="bx bx-cart-alt"></i>
+                                            <em class="bx bx-cart-alt"></em>
                                         </a>
                                     </div>
                                 @endif
@@ -232,7 +232,7 @@
                                 @if ($item->stock > 0)
                                     <div class="cart-btn">
                                         <a href="/drink/purchase/{{ $item->id }}">
-                                            <i class="bx bx-cart-alt"></i>
+                                            <em class="bx bx-cart-alt"></em>
                                         </a>
                                     </div>
                                 @endif
@@ -259,7 +259,7 @@
                                 @if ($item->stock > 0)
                                     <div class="cart-btn">
                                         <a href="/merchandise/purchase/{{ $item->id }}">
-                                            <i class="bx bx-cart-alt"></i>
+                                            <em class="bx bx-cart-alt"></em>
                                         </a>
                                     </div>
                                 @endif
